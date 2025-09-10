@@ -1,0 +1,18 @@
+{
+    "name": "ivan/74",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "AppUnitTests\\":"tests/unit"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ivan",
+            "email": "volkivanv@mail.ru"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
