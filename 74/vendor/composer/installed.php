@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'ivan/74',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '140b8d5fb1bf61ee5b3460ac3796dd0931868ac0',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => true,
         ),
         'ivan/74' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '140b8d5fb1bf61ee5b3460ac3796dd0931868ac0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -110,9 +110,9 @@
             'dev_requirement' => true,
         ),
         'phpunit/phpunit' => array(
-            'pretty_version' => '9.6.25',
-            'version' => '9.6.25.0',
-            'reference' => '049c011e01be805202d8eebedef49f769a8ec7b7',
+            'pretty_version' => '9.6.26',
+            'version' => '9.6.26.0',
+            'reference' => 'a0139ea157533454f611038326f3020b3051f129',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),

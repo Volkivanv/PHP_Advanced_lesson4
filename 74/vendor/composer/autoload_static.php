@@ -52,6 +52,7 @@ class ComposerStaticInitbe0977ca143239aa12d76b8b0b5ff274
     );
 
     public static $classMap = array (
+        'AppUnitTests\\FreelanceMoneyCollectorTest' => __DIR__ . '/../..' . '/tests/unit/FreelanceMoneyCollectorTest.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
