@@ -5,9 +5,10 @@ namespace AppUnitTests;
 use App\FreelanceMoneyCollector;
 use Exception;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\DataProviderExternal;
 use PHPUnit\Framework\Attributes\TestWith;
 use PHPUnit\Framework\TestCase;
-
+use TestsApi\Datasets\EarnMoneyDataProvider;
 
 final class FreelanceMoneyCollectorTest extends TestCase
 {
@@ -92,7 +93,8 @@ final class FreelanceMoneyCollectorTest extends TestCase
         static::assertSame("$name заработал $collectedAmount руб. на фрилансе.", $result);
     }
 
-    #[dataProvider('someDataProvider')]
+    // #[dataProvider('someDataProvider')]
+    #[DataProviderExternal(EarnMoneyDataProvider::class, 'get')]
     public function testEarnMoneyWithDataProvider(string $name, array $collected, int $expectedCollectedAmount)
     {
         $collector = new FreelanceMoneyCollector($name);
@@ -103,12 +105,12 @@ final class FreelanceMoneyCollectorTest extends TestCase
         static::assertSame("$name заработал $expectedCollectedAmount руб. на фрилансе.", $result);
     }
 
-    public static function someDataProvider()
-    {
-        return [
-            'Василий' => ['Василий', [20000, 4400], 24400],
-            'Михаил' => ['Михаил', [15000, 0], 15000],
-            'Алексей' => ['Алексей', [15000, 3300, 50000, 13000], 81300],
-        ];
-    }
+    // public static function someDataProvider()
+    // {
+    //     return [
+    //         'Василий' => ['Василий', [20000, 4400], 24400],
+    //         'Михаил' => ['Михаил', [15000, 0], 15000],
+    //         'Алексей' => ['Алексей', [15000, 3300, 50000, 13000], 81300],
+    //     ];
+    // }
 }

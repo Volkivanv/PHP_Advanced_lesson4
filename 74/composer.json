@@ -3,7 +3,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "AppUnitTests\\": "tests/unit"
+            "AppUnitTests\\": "tests/unit",
+            "TestsApi\\Datasets": "tests/api/Datasets"
         }
     },
     "authors": [
